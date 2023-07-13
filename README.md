@@ -5,10 +5,10 @@
 - [Kevin Kipkoech](https://github.com/Kevin7744 "Visit github  account")
 
 ## TASKS:
-0. **Betty would be proud**				`mandatory`
+1. **Betty would be proud**				`mandatory`
 Write a beautiful code that passes the Betty checks.
 
-0. **Simple shell 0.1**					`mandatory`
+1. **Simple shell 0.1**					`mandatory`
 Write a UNIX command line interpreter.
 
 * Usage: `simple_shell`
@@ -29,26 +29,26 @@ Your Shell should:
 	* handle commands with arguments
 `execve` will be the core part of your Shell, don’t forget to pass the environ to it…
 
-0. **Simple shell 0.2**					`mandatory`
+1. **Simple shell 0.2**					`mandatory`
 Simple shell 0.1 +
 * [ ] Handle command lines with arguments
 
-0. **Simple shell 0.3**					`mandatory`
+1. **Simple shell 0.3**					`mandatory`
 Simple shell 0.2 +
 * [ ] Handle the `PATH`
 * [ ] `fork` must not be called if the command doesn’t exist
 
-0. **Simple shell 0.4**					`mandatory`
+1. **Simple shell 0.4**					`mandatory`
 Simple shell 0.3 +
 * [ ] Implement the `exit` built-in, that exits the shell
 * Usage: `exit`
 * You don’t have to handle any argument to the built-in `exit`
 
-0. **Simple shell 1.0**					`mandatory`
+1. **Simple shell 1.0**					`mandatory`
 Simple shell 0.4 +
 * [ ] Implement the `env` built-in, that prints the current environment
 
-0. **Simple shell 0.1.1**				`#advanced`
+1. **Simple shell 0.1.1**				`#advanced`
 Simple shell 0.1 +
 
 * [ ] Write your own `getline` function
@@ -59,17 +59,17 @@ Simple shell 0.1 +
 
 - be able to move the cursor
 
-0. **Simple shell 0.2.1**				`#advanced`
+1. **Simple shell 0.2.1**				`#advanced`
 Simple shell 0.2 +
 
 * You are not allowed to use `strtok`
-0. **Simple shell 0.4.1**				`#advanced`
+1. **Simple shell 0.4.1**				`#advanced`
 Simple shell 0.4 +
 
 * [ ] handle arguments for the built-in `exit`
 * Usage: `exit status`, where `status` is an integer used to `exit` the shell
 
-0. **`setenv`, `unsetenv`**					`#advanced`
+1. **`setenv`, `unsetenv`**					`#advanced`
 Simple shell 1.0 +
 
 * Implement the `setenv` and `unsetenv` builtin commands
@@ -83,7 +83,7 @@ Simple shell 1.0 +
 * Command syntax: `unsetenv VARIABLE`
 * [ ] Should print something on stderr on failure
 
-0. **`cd`**								`#advanced`
+1. **`cd`**								`#advanced`
 Simple shell 1.0 +
 
 * Implement the builtin command `cd`:
@@ -95,17 +95,17 @@ Simple shell 1.0 +
 * [ ] You have to update the environment variable `PWD` when you change directory
 `man chdir`, `man getcwd`
 
-0. **`;`**								`#advanced`
+1. **`;`**								`#advanced`
 Simple shell 1.0 +
 
 * [ ] Handle the commands separator `;`
 
-0. **`&&` and `||`**						`#advanced`
+1. **`&&` and `||`**						`#advanced`
 Simple shell 1.0 +
 
 * [ ] Handle the `&&` and `||` shell logical operators
 
-0. **`alias`**							`#advanced`
+1. **`alias`**							`#advanced`
 Simple shell 1.0 +
 
 * [ ] Implement the `alias` builtin command
@@ -114,19 +114,19 @@ Simple shell 1.0 +
 * [ ] `alias name [name2 ...]`: Prints the aliases `name`, `name2`, etc 1 per line, in the form `name='value'`
 * [ ] `alias name='value' [...]`: Defines an alias for each `name` whose `value` is given. If `name` is already an alias, replaces its value with `value`
 
-0. **Variables**						`#advanced`
+1. **Variables**						`#advanced`
 Simple shell 1.0 +
 
 * [ ] Handle variables replacement
 * [ ] Handle the `$?` variable
 * [ ] Handle the `$$` variable
 
-0. **Comments**							`#advanced`
+1. **Comments**							`#advanced`
 Simple shell 1.0 +
 
 * [ ] Handle comments (`#`)
 
-0. **File as input**					`#advanced`
+1. **File as input**					`#advanced`
 Simple shell 1.0 +
 
 * Usage: `simple_shell [filename]`
