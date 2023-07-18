@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
-* _help - Check the help, refer to help function
+* _help - Checks for requested error page.
 *
-* Return: 1 succes
+* Return: always 1
 */
 int _help(void)
 {
@@ -26,14 +26,16 @@ int _help(void)
 }
 
 /**
-* _helperror - Print the error
-*
-* Return: Anything, cause void function
+* _helperror - Prints error message when help is unavailable.
 */
 void _helperror(void)
 {
-		write(STDERR_FILENO, "\nError syntaxe : help [BUILT-IN]\n", 33);
-		write(STDERR_FILENO, "\n   Built-in command :\n\texit\n\tenv\n\tsetenv", 42);
-		write(STDERR_FILENO, "\n\tnsetenv\n\tcd\n\n", 15);
+	char *err_s1 = "\nError syntaxe : help [BUILT-IN]\n";
+	char *err_s2 = "\n   Built-in command :\n\texit\n\tenv\n\tsetenv";
+	char *err_s3 = "\n\tnsetenv\n\tcd\n\n";
+
+	write(STDERR_FILENO, err_s1, 33);
+	write(STDERR_FILENO, err_s2, 42);
+	write(STDERR_FILENO, err_s3, 15);
 
 }
