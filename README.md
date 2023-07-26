@@ -1,5 +1,11 @@
 
+<<<<<<< HEAD
 # 0x16. C - Simple Shell
+=======
+## TASKS:
+0. ### **Betty would be proud**				`mandatory`
+	* [x] Write a beautiful code that passes the Betty checks.
+>>>>>>> 1ff7b7d9550ce6ec363dbd58a267d2a8d3d92874
 
 
 
