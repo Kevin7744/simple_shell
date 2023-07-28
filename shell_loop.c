@@ -11,6 +11,7 @@
 */
 int main(__attribute__((unused)) int ac, char **av, char **env)
 {
+	program_name = av[0];
 	if (av[1] == NULL)
 		shell_loop(env);
 	else

@@ -49,6 +49,8 @@ path *path_head;
 char **array_command;
 char *user_input;
 int exit_var;
+char *program_name;
+extern char **environ;
 
 
 
@@ -89,6 +91,7 @@ size_t _fread(void *, size_t, FILE *);
 int err_tst(char *);
 void prt_num(unsigned int);
 int _putchar(int);
+void _perror(char *);
 
 /* LINKED LIST USEFUL COMMAND */
 path *add_node_end(path **, char *);
@@ -103,6 +106,7 @@ char *_strdup(char *str);
 void sep_to_space(void);
 int _atoi(char *);
 char *_strcat(char *, char *);
+int compare_n_letters(char *, char *, int);
 
 /* FREE COMMAND */
 void free_list(path *);
