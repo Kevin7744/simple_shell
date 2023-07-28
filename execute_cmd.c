@@ -67,6 +67,10 @@ void err_process(void)
 	{
 		if (i == 0)
 		{
+			write(STDERR_FILENO, program_name, _strlen(program_name));
+			write(STDERR_FILENO, ": ", 2);
+			write(STDERR_FILENO, _envget("SHLVL"), 1);
+			write(STDERR_FILENO, ": ", 2);
 			write(STDERR_FILENO, array_command[0], _strlen(array_command[0]));
 			write(STDERR_FILENO, ": not found\n", 12);
 		}
