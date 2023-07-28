@@ -9,6 +9,7 @@ int _exit_(void)
 {
 	int error_status;
 	int i;
+	char *error_string = NULL;
 
 	if (array_command[1] == NULL)
 	{
@@ -22,7 +23,8 @@ int _exit_(void)
 		{
 			if (array_command[1][i] < '0' || array_command[1][i] > '9')
 			{
-				write(STDERR_FILENO, "Error\n", 6);
+				errno = EINVAL;
+				perror(NULL);
 				return (0);
 			}
 		}

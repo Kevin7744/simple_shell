@@ -102,6 +102,7 @@ int _strlen(char *);
 char *_strdup(char *str);
 void sep_to_space(void);
 int _atoi(char *);
+char *_strcat(char *, char *);
 
 /* FREE COMMAND */
 void free_list(path *);
