@@ -24,7 +24,7 @@ int _exit_(void)
 			if (array_command[1][i] < '0' || array_command[1][i] > '9')
 			{
 				errno = EINVAL;
-				perror(NULL);
+				perror(error_string);
 				return (0);
 			}
 		}
